@@ -7,12 +7,12 @@
 
 （3）硬件端主要是采集餐厅环境信息，以及控制餐厅的的设备。硬件端采用乐鑫科技的ESP8266-WiFi模块，可以快速连接到WiFi网络内，从而与Web服务端进行交互。
 
-![图片1](.\asserts\图片1.jpg)
+![图片1](./asserts/图片1.jpg)
 
-![图片2](.\asserts\图片2.jpg)
+![图片2](./asserts/图片2.jpg)
 
-![图片3](.\asserts\图片3.jpg)
+![图片3](./asserts/图片3.jpg)
 
-![图片4](.\asserts\图片4.jpg)
+![图片4](./asserts/图片4.jpg)
 
-![图片5](.\asserts\图片5.jpg)
+![图片5](./asserts/图片5.jpg)
