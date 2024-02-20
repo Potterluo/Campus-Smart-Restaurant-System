@@ -1,0 +1,21 @@
+<!--pages/addComment/addComment.wxml-->
+<!-- 头像信息 -->
+<view class="header">
+  <view class="userImg">
+    <image src="cloud://dxl-001-8g05gsvs94fc6c28.6478-dxl-001-8g05gsvs94fc6c28-1301859847/shot/shot.jpg"></image>
+  </view>
+  <text class="name">梦飞幻翼</text>
+  <!-- <view class="btn">发布</view> -->
+</view>
+<!-- <button class="btn" form-type="submit">发 布</button> -->
+
+<!-- 发布内容区 -->
+<form bindsubmit="bindFormSubmit">
+  <textarea name="comCon" id="publish" cols="30" rows="10" placeholder="请输入内容(仅限140个字)"  maxlength="140"></textarea>
+  <button class="btn" form-type="submit">发 布</button>
+</form>
+
+<!-- 上传区域 -->
+<view class="img" bindtap="uploadImg">
+  <image src="{{src}}"></image>
+</view>

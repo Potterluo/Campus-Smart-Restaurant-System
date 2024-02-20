@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/communityIndex/communityIndex",
+    "pages/dingdingRoom/dingdingRoom",
+    "pages/healthyIndex/healthyIndex",
+    "pages/personalIndex/personalIndex",
+    "pages/addComment/addComment",
+    "pages/chooseGoods/chooseGoods",
+    "pages/order/order",
+    "pages/addSports/addSports",
+    "pages/myInfo/myInfo"
+  ],
+  "window": {
+    "backgroundColor": "#66ccff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#66ccff",
+    "navigationBarTitleText": "ZZU智慧校园餐厅",
+    "navigationBarTextStyle": "white"
+  },
+  
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/communityIndex/communityIndex",
+      "text": "社区",
+      "iconPath": "icons/首页.png",
+      "selectedIconPath": "icons/首页_fill.png"
+    },
+    {
+      "pagePath": "pages/dingdingRoom/dingdingRoom",
+      "text": "点餐",
+      "iconPath": "icons/全部订单.png",
+      "selectedIconPath": "icons/订单_fill.png"
+    },
+    {
+      "pagePath": "pages/healthyIndex/healthyIndex",
+      "text": "健康",
+      "iconPath": "icons/健康.png",
+      "selectedIconPath": "icons/健康 (1).png"
+    },
+    {
+      "pagePath": "pages/personalIndex/personalIndex",
+      "text": "个人",
+      "iconPath": "icons/我的.png",
+      "selectedIconPath": "icons/我的 _fill.png"
+    }]
+  },
+
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

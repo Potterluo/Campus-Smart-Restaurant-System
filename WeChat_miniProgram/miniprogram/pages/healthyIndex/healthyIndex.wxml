@@ -1,0 +1,117 @@
+<!--pages/healthyIndex/healthyIndex.wxml-->
+<view class="title">
+  <view class="left" bindtap="toLeft"></view>
+  <picker mode="date" value="{{topDate}}" start="2022-03-01" end="2022-07-01" 
+    bindchange="bindDateChange">
+    {{topDate}}
+  </picker>
+  <view class="right" bindtap="toRight"></view>
+</view>
+
+<view class="topCon">
+  <view class="topTitle">
+    <text>经典均衡饮食</text>
+  </view>
+  <view class="content">
+    <view class="topLeft">
+      <text>饮食摄入</text>
+      <text>{{foodEnergy}}</text>
+    </view>
+    <view class="topCenter">
+      <view class="container">
+        <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+      </view>
+    </view>
+    <view class="topRight">
+      <text>运动消耗</text>
+      <text>{{sportsEnergy}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="chooseFood">
+  <view class="choose" bindtap="toChooseFood" data-type="早餐">
+    <image src="../../icons/早餐.png"></image>
+    <text>+早餐</text>
+  </view>
+  <view class="choose" bindtap="toChooseFood" data-type="午餐">
+    <image src="../../icons/午餐.png"></image>
+    <text>+午餐</text>
+  </view>
+  <view class="choose" bindtap="toChooseFood" data-type="晚餐">
+    <image src="../../icons/晚餐.png"></image>
+    <text>+晚餐</text>
+  </view>
+  <view class="choose choose4" bindtap="toChooseSports">
+    <image src="../../icons/运动.png"></image>
+    <text>+运动</text>
+  </view>
+</view>
+
+<!--  -->
+<view class="foodCon">
+  <view wx:for="{{food}}" wx:key="item" class="eachTemp">
+    <view class="foodTop">
+      <text>{{item.title}}</text>
+      <view class="foodTopRight">
+        <text>{{item.totalEnergy}}</text>
+        <text>千卡</text>
+      </view>
+    </view>
+    <view class="foodList">
+      <view wx:for="{{item.list}}" wx:key="item">
+        <view class="eachList">
+          <view class="smallImg">
+            <image src="{{item.src}}"></image>
+          </view>
+          <view class="listCon">
+            <text>{{item.name}}</text>
+            <view class="rowShow">
+              <text>{{item.num}}</text>个
+            </view>
+          </view>
+          <view class="energy">
+            <text style="padding-right: 3px;">{{item.cal}}</text>千卡
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--  -->
+<view class="foodCon">
+  <view wx:for="{{sports}}" wx:key="item" class="eachTemp">
+    <view class="foodTop">
+      <text>{{item.title}}</text>
+      <view class="foodTopRight">
+        <text>{{item.totalEnergy}}</text>
+        <text>千卡</text>
+      </view>
+    </view>
+    <view class="foodList">
+      <view wx:for="{{item.list}}" wx:key="item">
+        <view class="eachList">
+          <view class="Img">
+            <image src="{{item.src}}"></image>
+          </view>
+          <view class="listCon">
+            <text>{{item.name}}</text>
+            <view class="rowShow">
+              <text>{{item.num * 30}}</text>分钟
+            </view>
+          </view>
+          <view class="energy">
+            <text style="padding-right: 3px;">{{item.cal}}</text>千卡
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="btext">
+  <text>完整记录三餐分析才准确</text>
+</view>

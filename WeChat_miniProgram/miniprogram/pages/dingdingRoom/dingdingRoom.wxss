@@ -1,0 +1,111 @@
+/* pages/dingdingRoom/dingdingRoom.wxss */
+.body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.row{
+  position: relative;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: solid #ccc 1px;
+  background-color: #ffffff;
+}
+.right{
+  position: absolute;
+  right: 30px;
+  font-weight: 200;
+  font-size: small;
+}
+.right2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 4em;
+}
+
+.arrowImg{
+  position: absolute;
+  right: 12px;
+  top: 23px;
+}
+
+.xieyi{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.jiage{
+  position: absolute;
+  right: 16px;
+  font-size: 12px;
+}
+
+.btn{
+  margin: 10px 0;
+}
+
+.myDingDan{
+  background-color: #ffffff;
+  margin-top: 40px;
+}
+.list{
+  padding: 5px;
+}
+.title{
+  height: 28px;
+  line-height: 28px;
+}
+.con{
+  margin-top: 10px;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  display: flex;
+  flex-direction: row;
+}
+.con .dingDanImg{
+  width: 60px;
+  height: 70px;
+  flex: 20%;
+}
+.con .dingDanImg image{
+  width: 100%;
+  height: 100%;
+}
+.rightCOn{
+  flex: 75%;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.topcon{
+  font-size: 14px;
+  padding: 5px;
+}
+.topcon text:nth-child(2){
+  padding-left: 25px;
+  font-size: 13px;
+}
+.bottomcon{
+  padding: 5px;
+  font-size: 16px;
+  position: relative;
+}
+.bottomcon text:nth-child(1){
+  padding-left: 20px;
+}
+.bottomcon text:nth-child(2){
+  position: absolute;
+  right: 10px;
+  color: red;
+  font-size: 13px;
+  font-weight: 500;
+}

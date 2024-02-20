@@ -1,0 +1,67 @@
+<!--pages/personalIndex/personalIndex.wxml-->
+<view class="topCon"></view>
+
+<view class="Con" bindtap="toMyInfo">
+  <view class="Img">
+    <image src="cloud://dxl-001-8g05gsvs94fc6c28.6478-dxl-001-8g05gsvs94fc6c28-1301859847/shot/shot.jpg"></image>
+  </view>
+  <view class="textCon">
+    <text>梦飞幻翼</text>
+  </view>
+  <view class="arrow">
+    <text>></text>
+  </view>
+</view>
+
+<view class="botCon">
+  <view class="list">
+    <view class="listCon" bindtap="scanCode">
+      <view class="Image">
+        <image src="../../icons/健康 (1).png"></image>
+      </view>
+      <view class="botText">
+        <text>扫一扫</text>
+      </view>
+      <view class="botArrow">
+        <text>></text>
+      </view>
+    </view>
+
+    <view class="listCon">
+      <view class="Image">
+        <image src="../../icons/健康 (1).png"></image>
+      </view>
+      <view class="botText">
+        <text>我的地址</text>
+      </view>
+      <view class="botArrow">
+        <text>></text>
+      </view>
+    </view>
+
+    <view class="listCon" bindtap="feedBack">
+      <view class="Image">
+        <image src="../../icons/健康 (1).png"></image>
+      </view>
+      <view class="botText">
+        <text>问题反馈</text>
+      </view>
+      <view class="botArrow">
+        <text>></text>
+      </view>
+    </view>
+
+    <view class="listCon" bindtap="aboutUs">
+      <view class="Image">
+        <image src="../../icons/健康 (1).png"></image>
+      </view>
+      <view class="botText">
+        <text>关于我们</text>
+      </view>
+      <view class="botArrow">
+        <text>></text>
+      </view>
+    </view>
+
+  </view>
+</view>

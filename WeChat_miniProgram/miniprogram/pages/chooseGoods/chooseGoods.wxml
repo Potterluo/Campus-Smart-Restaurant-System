@@ -1,0 +1,45 @@
+<!--pages/chooseGoods/chooseGoods.wxml-->
+<view class="body">
+  <view class="header">
+    <!-- <radio checked="{{radio}}" bindtap="radioChange"></radio> -->
+    <text>美食广场1号窗口</text>
+    <div class="btn">
+      <button type="primary" size="mini" bindtap="chooseOk">选好了</button>
+    </div>
+  </view>
+  <checkbox-group bindchange="checkboxChange1">
+    <label wx:for="{{food1}}" wx:key="item">
+      <checkbox value="{{item.name + ',' + item.price}}" class="checkBox">
+      <image src="{{item.img}}" style="width: 48px;height: 48px;"></image>
+        <view class="Text">
+          <text>商品名:{{item.name}}; </text>
+          <text>单价:￥{{item.price}}; </text>
+          <text>数量:{{item.num}}; </text>
+        </view>
+    </checkbox>
+    </label>
+  </checkbox-group>
+</view>
+
+<view class="body">
+  <view class="header">
+    <!-- <radio checked="{{radio}}" bindtap="radioChange"></radio> -->
+    <text>学生一餐厅2号窗口</text>
+  </view>
+  <checkbox-group bindchange="checkboxChange2">
+    <label wx:for="{{food2}}" wx:key="item">
+      <checkbox value="{{item.name + ',' + item.price}}" class="checkBox">
+      <image src="{{item.img}}" style="width: 48px;height: 48px;"></image>
+        <view class="Text">
+          <text>商品名:{{item.name}}; </text>
+          <text>单价:￥{{item.price}}; </text>
+          <text>数量:{{item.num}}; </text>
+        </view>
+    </checkbox>
+    </label>
+  </checkbox-group>
+</view>
+
+<view class="footer">
+  <text class="total">价格: ￥ {{totalPrice1 + totalPrice2}}</text>
+</view>

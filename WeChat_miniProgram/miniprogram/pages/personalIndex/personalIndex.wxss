@@ -1,0 +1,88 @@
+/* pages/personalIndex/personalIndex.wxss */
+.topCon{
+  width: 100%;
+  height: 100px;
+  background-color: skyblue;
+  position: relative;
+}
+/*  */
+.Con{
+  width: 90%;
+  height: 100px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  border-radius: 8px;
+  box-shadow: slategrey;
+  display: flex;
+  flex-direction: row;
+  border: solid #eeeeee 1px;
+}
+.Img{
+  margin: auto 10px;
+  width: 60px;
+  height: 60px;
+  /*
+  border-radius: 50%;
+  overflow: hidden; */
+  border: solid #ccc 2px;
+  border-radius: 50%;
+  float: left;
+  /* padding: 10px; */
+  margin-right: 10px;
+  overflow:hidden;
+}
+.textCon{
+  margin: auto 10px;
+  font-size: 21px;
+  font-weight: 600;
+}
+.arrow{
+  font-size: 18px;
+  margin: auto 10px;
+  
+}
+/*  */
+.botCon{
+  background-color: #ffffff;
+  width: 100%;
+  height: 80vh;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.listCon{
+  display: flex;
+  flex-direction: row;
+  margin: auto 10px;
+  position: relative;
+  border-bottom: solid #eeeeee 1px;
+  padding: 5px;
+  height: 42px;
+  /* line-height: 42px; */
+}
+.Image{
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  padding: 3px;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.botText{
+  margin: auto 10px;
+}
+.botArrow{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-weight: 600;
+  color: grey;
+  opacity: 0.5;
+  font-size: 21px;
+}

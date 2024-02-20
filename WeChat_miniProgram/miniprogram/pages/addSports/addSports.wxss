@@ -1,0 +1,76 @@
+/* pages/addSports/addSports.wxss */
+.foodList{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.eachFood{
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border: solid 1px #eeeeee;
+  position: relative;
+}
+.Img{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: auto 5px;
+  border-radius: 5px;
+}
+.Img image{
+  width: 50px;
+  height: 50px;
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: auto 5px;
+}
+.detail text:nth-child(1){
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.detail text:nth-child(2){
+  font-size: 12px;
+  font-weight: 400;
+  color: grey;
+}
+.countNum{
+  display: flex;
+  flex-direction: row;
+  margin: auto 0;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+.Image{
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  justify-content: center;
+  font-size: 23px;
+  line-height: 25px;
+  border: solid 1px grey;
+}
+.countNum text{
+  padding: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn{
+  width: 40%;
+  height: 42px;
+  line-height: 42px;
+  font-size: 23px;
+  margin: 10px auto;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 0%;
+}

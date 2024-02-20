@@ -1,0 +1,13 @@
+<view class="body">
+<!-- 用户信息 -->
+  <view class="userInfo">
+    <view class="userImg">
+      <img src="" alt=""/>
+    </view>
+    <view class="userName"></view>
+  </view>
+  <!-- 用户评论 -->
+  <view class="comment"></view>
+  <!-- 用户上传图片 -->
+  <view class="uploadImg"></view>
+</view>

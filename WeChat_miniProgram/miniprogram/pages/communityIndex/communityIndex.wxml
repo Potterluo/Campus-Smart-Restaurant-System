@@ -1,0 +1,56 @@
+<!--pages/communityIndex/communityIndex.wxml-->
+<!-- 顶部轮播图 -->
+<view class="header">
+  <view class="page-body">
+    <view>
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+        bindchange="swiperChange" current="{{current}}" circular="true">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>
+
+<view class="main">
+<!-- 主题 -->
+<view class="body" wx:for="{{userInfo}}" wx:key="item">
+<!-- 用户信息 -->
+  <view class="userInfo">
+    <view class="userImg">
+      <image src="{{item.userImg}}"></image>
+    </view>
+    <view class="infoBody">
+      <view class="userName">{{item.userName}}</view>
+        <view class="info">
+          <view class="time">{{item.publishTime}}</view>
+          <view class="tagInfo">
+            <view class="tag">{{item.tag}}</view>
+        </view>
+      </view>
+      <view class="praise" wx:if="{{item.praise}}" data-index="{{index}}" bindtap="changePraise">
+        <image src="../../icons/可爱的 (1).png" alt=""/>
+        <!-- <image src="{{praiseImg}}"></image> -->
+      </view>
+      <view class="praise" data-index="{{index}}" bindtap="changePraise" wx:else>
+        <image src="../../icons/可爱的.png" alt=""/>
+      </view>
+    </view>
+      <!-- 用户评论 -->
+    <view class="comment">{{item.content}}</view>
+  </view>
+  <!-- 用户上传图片 -->
+  <view class="uploadImg">
+    <image src="{{item.uploadImg}}" alt=""/>
+  </view>
+</view>
+
+<!-- 固定添加符号 -->
+<view class="add" bindtap="addComment">
+  <image src="https://7831-x1y-a4v9j-1300295366.tcb.qcloud.la/du/%E5%8A%A0%E5%8F%B7.png?sign=52b83f0933488a9c10b0965d18665e54&t=1649297361"></image>
+</view>
+</view>
