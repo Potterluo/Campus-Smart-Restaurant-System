@@ -1,0 +1,23 @@
+<!--pages/order/order.wxml-->
+<view class="foodList">
+  <block wx:for="{{foodList}}" wx:key="item">
+    <view class="eachFood">
+      <view class="Img">
+        <image src="{{item.src}}"></image>
+      </view>
+      <view class="detail">
+        <text>{{item.name}}</text>
+        <text>{{item.cal}}千卡/ 100克</text>
+      </view>
+      <view class="countNum">
+        <view class="Image" data-index="{{index}}" bindtap="subNum">-</view>
+        <text>{{item.num}}</text>
+        <view class="Image" data-index="{{index}}" bindtap="addNum">+</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="btn" bindtap="Finished">
+  <button type="primary" plain="true">完成</button>
+</view>

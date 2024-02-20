@@ -1,0 +1,1 @@
+"D:\2code\Wechatdev\微信web开发者工具\cli.bat" cloud functions deploy --e xly-r23ux --n quickstartFunctions --r --project "F:\WeUI\miniprogram-3" --report_start && "D:\2code\Wechatdev\微信web开发者工具\cli.bat" cloud functions deploy --e dxl-007-9gi255pp77fbde20 --n quickstartFunctions --r --project "F:\WeUI\miniprogram-3" --report

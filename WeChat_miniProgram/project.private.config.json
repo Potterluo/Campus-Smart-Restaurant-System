@@ -1,0 +1,126 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "id": -1,
+                    "name": "db guide",
+                    "pathName": "pages/databaseGuide/databaseGuide",
+                    "query": ""
+                },
+                {
+                    "name": "pages/getOpenId/index",
+                    "pathName": "pages/getOpenId/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/deployService/index",
+                    "pathName": "pages/deployService/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/selectRecord/index",
+                    "pathName": "pages/selectRecord/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/sumRecordResult/index",
+                    "pathName": "pages/sumRecordResult/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/updateRecord/index",
+                    "pathName": "pages/updateRecord/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/updateRecordResult/index",
+                    "pathName": "pages/updateRecordResult/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/updateRecordSuccess/index",
+                    "pathName": "pages/updateRecordSuccess/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/healthyIndex/healthyIndex",
+                    "pathName": "pages/healthyIndex/healthyIndex",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/communityIndex/communityIndex",
+                    "pathName": "pages/communityIndex/communityIndex",
+                    "query": "",
+                    "scene": null,
+                    "partialCompile": {
+                        "enabled": false,
+                        "pages": [
+                            "pages/communityIndex/communityIndex"
+                        ]
+                    }
+                },
+                {
+                    "name": "pages/addComment/addComment",
+                    "pathName": "pages/addComment/addComment",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/chooseGoods/chooseGoods",
+                    "pathName": "pages/chooseGoods/chooseGoods",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/dingdingRoom/dingdingRoom",
+                    "pathName": "pages/dingdingRoom/dingdingRoom",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/personalIndex/personalIndex",
+                    "pathName": "pages/personalIndex/personalIndex",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/order/order",
+                    "pathName": "pages/order/order",
+                    "query": "type=%E6%97%A9%E9%A4%90",
+                    "scene": null
+                },
+                {
+                    "name": "pages/addSports/addSports",
+                    "pathName": "pages/addSports/addSports",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/healthyIndex/healthyIndex",
+                    "pathName": "pages/healthyIndex/healthyIndex",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,43 @@
+server:
+  ip: localhost
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qing?serverTimezone=GMT%2b8
+    username: root
+    password: ****************
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  mqtt:
+    username: test02
+    password: 123456
+    url: tcp://*********************
+    client:
+      id: mqttId111
+    default:
+      topic: topic
+    consumer:
+      clientId: mqttId222
+      defaultTopic: hello,temperature, test
+  #controller->MqttController;config->MqttSenderConfig   在未开启mqtt服务器情况下注释掉
+  mvc:
+    format:
+      date: yyyy-mm-dd
+      date-time: yyyy-MM-dd HH:mm:ss
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #扫描所有mybatis的xml文件
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+files:
+  upload:
+    path: F:\springboot+vue\pure-design-master\files
+#    path: /home/files/

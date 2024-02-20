@@ -1,0 +1,54 @@
+<!--pages/dingdingRoom/dingdingRoom.wxml-->
+<view class="body">
+  <block wx:for="{{dingDanInfo}}" wx:key="item">
+    <view class="row">
+      <view class="left">订餐人</view>
+      <!-- <view class="right" style="color: red;">{{item.Address==="" ? "请添加收货地址" : "地址"}}</view> -->
+      <view class="right">杜晓龙</view>
+      <image src="../../icons/向下.png" style="width: 10px;height: 10px;" class="arrowImg"></image>
+    </view>
+    <view class="row">
+      <view class="left">收货地址</view>
+      <!-- <view class="right" style="color: red;">{{item.Address==="" ? "请添加收货地址" : "地址"}}</view> -->
+      <view class="right">男生宿舍二号楼</view>
+      <image src="../../icons/向下.png" style="width: 10px;height: 10px;" class="arrowImg"></image>
+    </view>
+    <view class="row" bindtap="chooseFood">
+      <view class="left">餐品选购</view>
+      <view class="right right2">{{Choose}}</view>
+      <image src="../../icons/向下.png" style="width: 10px;height: 10px;" class="arrowImg"></image>
+    </view>
+    <view class="row">
+      <view class="left">应付总额</view>
+      <view class="right" style="color: red;">￥{{totalPrice}}</view>
+      <image src="../../icons/向下.png" style="width: 10px;height: 10px;" class="arrowImg"></image>
+    </view>
+  </block>
+</view>
+
+
+
+<button class="btn" bindtap="commitDingDan" type="primary">提交订单</button>
+
+<view class="myDingDan" wx:if="{{display}}">
+  <view class="list">
+    <view class="title">
+      <text>我的订单</text>
+    </view>
+    <view class="con">
+      <view class="dingDanImg">
+        <image src="../../images/图片.png"></image>
+      </view>
+      <view class="rightCOn">
+        <view class="topcon">
+          <text>订单-{{random}}</text>
+          <text>创建时间: {{time}}</text>
+        </view>
+        <view class="bottomcon">
+        <text>配送中</text>
+        <text>￥ {{totalPrice}}</text>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

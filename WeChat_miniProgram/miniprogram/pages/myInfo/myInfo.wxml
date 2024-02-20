@@ -1,0 +1,31 @@
+<!--pages/myInfo/myInfo.wxml-->
+<view class="btn" bindtap="submit">
+  <text>提交修改</text>
+</view>
+
+<view class="Img">
+  <image src="cloud://dxl-001-8g05gsvs94fc6c28.6478-dxl-001-8g05gsvs94fc6c28-1301859847/shot/shot.jpg"></image>
+</view>
+
+<view class="info">
+  <view class="rowInfo">
+    <text>用户昵称</text>
+    <input type="nickname" placeholder="{{userInfo.nickname}}" bindinput="inputNickname"/>
+  </view>
+
+  <view class="rowInfo">
+    <text>我的地址</text>
+    <input type="text" placeholder="{{userInfo.address}}" bindinput="inputAddress"/>
+  </view>
+
+  <view class="rowInfo">
+    <text>用户邮箱</text>
+    <input type="text" placeholder="{{userInfo.email}}" bindinput="inputEmail"/>
+  </view>
+
+  <view class="rowInfo">
+    <text>联系方式</text>
+    <input type="text" placeholder="{{userInfo.tel}}" bindinput="inputTel"/>
+  </view>
+
+</view>

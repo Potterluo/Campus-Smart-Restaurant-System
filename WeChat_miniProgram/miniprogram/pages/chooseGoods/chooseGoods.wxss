@@ -1,0 +1,71 @@
+/* pages/chooseGoods/chooseGoods.wxss */
+.body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: #cccccc solid 1px;
+  padding: 6px;
+  position: relative;
+}
+.btn{
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  margin-right: 10px;
+}
+.header text{
+  margin-left: 7px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+checkbox-group{
+  display: flex;
+  flex-direction: column;
+}
+.checkBox{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px #ccc solid;
+}
+.checkBox image{
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.Text{
+  display: inline;
+  height: 48px;
+}
+.checkBox text{
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  margin-top: 6px;
+}
+.huodong{
+  position: absolute;
+  right: 15px;
+}
+.total{
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  margin-top: 3px;
+}
